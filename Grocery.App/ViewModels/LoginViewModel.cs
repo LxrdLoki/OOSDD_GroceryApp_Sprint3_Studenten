@@ -1,12 +1,9 @@
-﻿
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Grocery.App.ViewModels;
 using Grocery.App.Views;
 using Grocery.Core.Interfaces.Services;
 using Grocery.Core.Models;
 using System.Diagnostics;
-using System.Threading.Tasks;
 
 namespace Grocery.App.ViewModels
 {
@@ -51,7 +48,6 @@ namespace Grocery.App.ViewModels
         {
             if (_global.Client == null)
             {
-                Debug.WriteLine("I CAN'T GO TO REGISTERVIEW");
                 await Shell.Current.GoToAsync(nameof(RegisterView), true);
             }
         }
